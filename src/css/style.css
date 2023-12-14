@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    --dot-bg: white;
+    --dot-color: #dcdcdc;
+    --dot-size: 2px;
+    --dot-space: 35px;
+    background:
+            linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+            linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+            var(--dot-color);
+
+}
+
+.content {
+    display: none;
+}
+
+.content-active {
+    display: block;
+    animation: fade 1000ms ease-in-out;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+.hamburger-menu {
+    visibility: hidden;
+    opacity: 0;
+    animation: hamburger-hide 100ms ease-in-out;
+}
+
+.hamburger-menu-active {
+    display: block;
+    opacity: 1;
+    transform: translateX(calc(0px * 1));
+    animation: hamburger-show 100ms ease-in-out;
+}
+
+@keyframes hamburger-show {
+    from {
+        opacity: 0;
+        transform: translateX(calc(50px * 1));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(calc(0px * 1));
+    }
+
+}
+
+@keyframes hamburger-hide {
+    from {
+        opacity: 1;
+        transform: translateX(calc(0px * 1));
+    }
+    to {
+        opacity: 0;
+        transform: translateX(calc(90px * 1));
+    }
+
+}
+
+
+.active {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+    background-image: linear-gradient(to right, rgb(163, 163, 163), rgb(82, 82, 82), rgb(38, 38, 38));
+    display: inline-block;
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    transition-duration: 300ms;
+}
+
+.indicator {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    margin-left: 0.5rem;
+    border-radius: 9999px;
+    height: 3rem;
+    background-color: #ffffff;
+    box-shadow: 0 8px 30px rgb(0, 0, 0, 0.12);
+    top: 6px;
+    width: 5.5rem;
+    transition: 200ms;
+    animation: ease-in-out;
+}
+
+
+ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(89px * 1));
+}
+
+
+ul li:nth-child(2).active {
+    background-image: linear-gradient(to right, rgb(251, 113, 133), rgb(217, 70, 239), rgb(99, 102, 241));
+}
+

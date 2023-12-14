@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="shortcut icon" href="src/assets/favicon.png" type="image/x-icon">
+    <script src="src/js/app.js" type="module"></script>
+    <title>Mendomo</title>
+</head>
+<body>
+
+<!-- Barre de navigation -->
+<nav class="max-w-screen-lg mx-auto px-2 xl:px-0 flex items-center justify-between my-7  fixed left-0 right-0 z-50">
+    <!-- Logo -->
+    <div class="h-16 w-16 bg-white flex items-center rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:scale-110 duration-300">
+        <img src="/src/assets/memoji.png" alt="memoji" class="h-10 mx-auto">
+    </div>
+
+    <!-- Onglets du menu -->
+    <ul class="grid grid-cols-2 items-center w-48 justify-items-center bg-[#f6f6f6] p-2 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] relative duration-300">
+        <!-- Onglet "Projets" -->
+        <li class="text-lg text-neutral-600 hover:text-neutral-800 bg-clip-text z-10 py-2 px-3 rounded-full cursor-pointer active duration-100 ease-in-out" data-tab>
+            Projets
+        </li>
+        <!-- Onglet "Contact" -->
+        <li class="text-lg text-neutral-600 hover:text-neutral-800 bg-clip-text z-10 py-2 px-3 rounded-full cursor-pointer duration-100 ease-in-out" data-tab>
+            Contact
+        </li>
+        <!-- Indicateur d'onglet actif -->
+        <li class="indicator bg-red-500"></li>
+    </ul>
+
+    <!-- Menu hamburger -->
+    <div class="relative">
+        <!-- Icône du menu hamburger -->
+        <div class="rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] h-16 w-16 flex items-center hover:scale-110 duration-300 cursor-pointer bg-white" id="hamburgerMenuIcon">
+            <img src="/src/assets/list-light.svg" class="h-8 mx-auto">
+        </div>
+
+        <!-- Contenu du menu hamburger -->
+        <div class="w-64 bg-white absolute right-0 shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 rounded-2xl mt-2.5 hamburger-menu" id="hamburgerMenu">
+            <!-- Lien vers le CV -->
+            <a href="src/assets/CV.pdf" target="_blank" class="flex items-center text-lg gap-x-3 p-4 rounded-lg duration-500 text-neutral-600 hover:bg-neutral-200/50">
+                <img src="src/assets/read-cv-logo.svg" class="w-6"> Curriculum vitæ
+            </a>
+            <!-- Lien vers le profil GitHub -->
+            <a href="https://github.com/dylanmdn" target="_blank" class="flex items-center text-lg gap-x-3 p-4 rounded-lg duration-500 text-neutral-600 hover:bg-neutral-200/50">
+                <img src="src/assets/github-logo-fill.svg" class="w-6"> GitHub
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Entête de la page -->
+<header class="max-w-screen-lg mx-auto px-2 lg:px-0 h-[550px] grid items-center justify-center">
+
+    <!-- Première section de contenu -->
+    <div class="content content-active pt-20" data-header>
+        <!-- Titre principal -->
+        <h1 class="text-6xl font-semibold text-center bg-gradient-to-r from-neutral-200 via-neutral-600 to-neutral-800 text-transparent bg-clip-text">
+            Bonjour, je suis Dylan.</h1>
+
+        <!-- Emplacement et information -->
+        <div class="flex items-center justify-center gap-x-1 py-10">
+            <img src="src/assets/map-pin-light.svg" class="w-6">
+            <p class="text-lg text-neutral-600 font-medium">Toulouse, FR</p>
+        </div>
+
+        <!-- Description -->
+        <p class="text-center md:w-2/3 mx-auto text-neutral-600 font-medium">Je suis actuellement salarié chez Capgemini, en tant que technicien d'exploitation (supervision), et titulaire d'un BTS SIO option SLAM. Je suis à la recherche d'une opportunité d'alternance en tant que développeur junior. </p>
+    </div>
+
+    <!-- Deuxième section de contenu -->
+    <div class="content pt-20" data-header>
+        <!-- Titre principal -->
+        <h1 class="text-6xl font-semibold text-center bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text">
+            Bonjour, contactez moi.</h1>
+
+        <!-- Emplacement et information -->
+        <div class="flex items-center justify-center gap-x-1 py-10">
+            <img src="src/assets/map-pin-light.svg" class="w-6">
+            <p class="text-lg text-neutral-600 font-medium">Toulouse, FR</p>
+        </div>
+
+        <!-- Description -->
+        <p class="text-center md:w-2/4 mx-auto text-neutral-600 font-medium">Si vous avez des questions, des commentaires ou si vous souhaitez discuter, n'hésitez pas à me contacter. </p>
+    </div>
+</header>
+
+<main class="max-w-screen-lg  mx-auto px-2 lg:px-0">
+    <div class="tab-content grid gap-5 ">
+        <div class="content content-active py-7  max-w-md sm:max-w-xl md:max-w-2xl mx-auto " data-content>
+            <div class="bg-[#eceff1] md:hover:bg-[#f6f6f6] md:hover:shadow-2xl md:hover:scale-105 duration-300 rounded-3xl w-auto  lg:w-[836px] lg:h-[400px] mx-auto mb-24">
+                <div class="grid lg:grid-cols-2 py-7 lg:p-0  items-center justify-items-center h-full  ">
+                    <div class=" px-3 md:px-10 max-lg:text-center ">
+                        <h1 class="text-4xl font-medium">PDF Utils</h1>
+                        <p class="py-5 text-neutral-600">Réalisation d'une application de bureau en Java/JavaFX. Cette application permet de fusionner et de séparer les fichiers au format PDF.</p>
+                        <div class="pb-5">
+                            <span class="whitespace-nowrap rounded-full bg-red-100 px-2.5 py-0.5 text-sm text-red-700">Java</span>
+                            <span class="whitespace-nowrap rounded-full bg-orange-100 px-2.5 py-0.5 text-sm text-orange-700">JavaFX</span>
+                            <span class="whitespace-nowrap rounded-full bg-neutral-200 px-2.5 py-0.5 text-sm text-neutral--700">Apache PDFBox</span>
+                            <span class="whitespace-nowrap rounded-full bg-yellow-100 px-2.5 py-0.5 text-sm text-yellow-700">SceneBuilder</span>
+                        </div>
+
+                        <a href="https://github.com/dylanmdn/PDF-Utils" target="_blank" class="">
+                            <button class="flex justify-between items-center w-44  max-lg:mx-auto  gap-x-2 py-4 px-5 bg-white text-neutral-800 font-semibold group rounded-2xl hover:border-[#646464] border  duration-300">
+                                Voir Github <img src="src/assets/arrow-right-bold.svg"
+                                                 class="w-6 bg-clip-text group-hover:translate-x-1 duration-300">
+                            </button>
+                        </a>
+
+                    </div>
+
+                    <div class="pt-5 px-5 drop-shadow-2xl">
+                        <img src="src/assets/pdfUtils.png"  class="min-w-[50px] w-[370px] rounded-3xl  ">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#eceff1] md:hover:bg-[#f6f6f6] md:hover:shadow-2xl md:hover:scale-105 duration-300 rounded-3xl w-auto  lg:w-[836px] lg:h-[400px] mx-auto mb-24">
+                <div class="grid lg:grid-cols-2 py-7 lg:p-0  items-center justify-items-center h-full  ">
+                    <div class=" px-3 md:px-10 max-lg:text-center ">
+                        <h1 class="text-4xl font-medium">Landing Page Qonto</h1>
+                        <p class="py-5 text-neutral-600">Réalisation d'une landing page, de l'entreprise Qonto pour présenter certains services.</p>
+                        <div class="pb-5">
+                            <span class="whitespace-nowrap rounded-full bg-orange-100 px-2.5 py-0.5 text-sm text-orange-700">HTML</span>
+                            <span class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-700">CSS</span>
+                            <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-sm text-sky-700">Tailwind</span>
+                            <span class="whitespace-nowrap rounded-full bg-yellow-100 px-2.5 py-0.5 text-sm text-yellow-700">Javascript</span>
+                        </div>
+
+                        <div class="flex items-center gap-x-3 max-lg:justify-center ">
+                            <a href="https://qonto-landing-page.netlify.app" target="_blank" class="inline-block ">
+                                <button class="flex justify-between items-center w-44  gap-x-2 py-4 px-5 bg-white text-neutral-800 font-semibold group rounded-2xl hover:border-[#646464] border  duration-300  ">
+                                    Qonto <img src="src/assets/arrow-right-bold.svg"
+                                               class="w-6 bg-clip-text group-hover:translate-x-1 duration-300">
+                                </button>
+                            </a>
+
+                            <a href="https://github.com/dylanmdn/qonto-landing-page" target="_blank"
+                               class="hover:scale-110 duration-300">
+                                <img src="src/assets/github-logo-fill.svg" class="w-6">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="pt-5 px-3 drop-shadow-2xl">
+                        <iframe class="rounded-3xl bg-white" src="https://qonto-landing-page.netlify.app/" width="370" height="340" ></iframe>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#eceff1] md:hover:bg-[#f6f6f6] md:hover:shadow-2xl md:hover:scale-105 duration-300 rounded-3xl w-auto  lg:w-[836px] lg:h-[400px] mx-auto mb-24">
+                <div class="grid lg:grid-cols-2 py-7 lg:p-0  items-center justify-items-center h-full  ">
+                    <div class=" px-3 md:px-10 max-lg:text-center ">
+                        <h1 class="text-4xl font-medium">Landing Page RideMe</h1>
+                        <p class="py-5 text-neutral-600">Réalisation d'une landing page pour une entreprise fictive de VTC.</p>
+                        <div class="pb-5">
+                            <span class="whitespace-nowrap rounded-full bg-orange-100 px-2.5 py-0.5 text-sm text-orange-700">HTML</span>
+                            <span class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-700">CSS</span>
+                            <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-sm text-sky-700">Tailwind</span>
+                            <span class="whitespace-nowrap rounded-full bg-yellow-100 px-2.5 py-0.5 text-sm text-yellow-700">Javascript</span>
+                        </div>
+
+                        <div class="flex items-center gap-x-3 max-lg:justify-center ">
+                            <a href="https://rideme-landing-page.netlify.app" target="_blank" class="inline-block ">
+                                <button class="flex justify-between items-center w-44  gap-x-2 py-4 px-5 bg-white text-neutral-800 font-semibold group rounded-2xl hover:border-[#646464] border  duration-300  ">
+                                    RideMe <img src="src/assets/arrow-right-bold.svg"
+                                               class="w-6 bg-clip-text group-hover:translate-x-1 duration-300">
+                                </button>
+                            </a>
+
+                            <a href="https://github.com/dylanmdn/rideme-landing-page" target="_blank"
+                               class="hover:scale-110 duration-300">
+                                <img src="src/assets/github-logo-fill.svg" class="w-6">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="pt-5 px-3 drop-shadow-2xl">
+                        <iframe class="rounded-3xl bg-white" src="https://rideme-landing-page.netlify.app" width="370" height="340" ></iframe>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#eceff1] md:hover:bg-[#f6f6f6] md:hover:shadow-2xl md:hover:scale-105 duration-300 rounded-3xl w-auto  lg:w-[836px] lg:h-[400px] mx-auto mb-24">
+                <div class="grid lg:grid-cols-2 py-7 lg:p-0  items-center justify-items-center h-full  ">
+                    <div class=" px-3 md:px-10 max-lg:text-center ">
+                        <h1 class="text-4xl font-medium">Todo-List</h1>
+                        <p class="py-5 text-neutral-600">Réalisation d'une Todo-List en VueJs pour découvrir le framework.</p>
+                        <div class="pb-5">
+                            <span class="whitespace-nowrap rounded-full bg-orange-100 px-2.5 py-0.5 text-sm text-orange-700">HTML</span>
+                            <span class="whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-700">CSS</span>
+                            <span class="whitespace-nowrap rounded-full bg-sky-100 px-2.5 py-0.5 text-sm text-sky-700">Tailwind</span>
+                            <span class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-700">VueJS</span>
+                        </div>
+                        <div class="flex items-center gap-x-3 max-lg:justify-center ">
+                            <a href="https://todolist-vue-project.netlify.app" target="_blank" class="inline-block ">
+                                <button class="flex justify-between items-center w-44  gap-x-2 py-4 px-5 bg-white text-neutral-800 font-semibold group rounded-2xl hover:border-[#646464] border  duration-300  ">
+                                    Todo-List <img src="src/assets/arrow-right-bold.svg"
+                                               class="w-6 bg-clip-text group-hover:translate-x-1 duration-300">
+                                </button>
+                            </a>
+
+                            <a href="https://github.com/dylanmdn/todolist" target="_blank"
+                               class="hover:scale-110 duration-300">
+                                <img src="src/assets/github-logo-fill.svg" class="w-6">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="pt-5 px-3 drop-shadow-2xl">
+                        <iframe class="rounded-3xl bg-white" src="https://todolist-vue-project.netlify.app" width="370" height="340" ></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content pb-20" data-content>
+            <form class="max-w-lg  mx-auto grid gap-y-3"  action="https://formspree.io/f/xdorqrlz" method="POST" >
+                <label class="relative block">
+                    <span class="absolute inset-y-0 left-0 flex items-center px-3 py-3.5 h-max "><img
+                            src="src/assets/user.svg" class="w-6"></span>
+                    <input placeholder="Entrez votre nom" type="text" name="Nom"
+                           class="py-3 pl-12 w-full border-2 border-neutral-900 rounded-xl border-b-[6px] outline-0 focus:outline-none placeholder-neutral-600/50 "
+                           required />
+                </label>
+                <label class="relative block">
+                    <span class="absolute inset-y-0 left-0 flex items-center px-3 py-3.5 h-max "><img
+                            src="src/assets/envelope.svg" class="w-6"></span>
+                    <input placeholder="Entrez votre email" type="email" name="Email"
+                           class="py-3 pl-12 w-full border-2 border-neutral-900 rounded-xl border-b-[6px] outline-0 focus:outline-none placeholder-neutral-600/50 "
+                           required/>
+                </label>
+
+                <textarea name="message"
+                        placeholder="Entrez votre message"
+                        class="p-3 text-lg w-full resize-none  border-2 border-neutral-900 rounded-xl border-b-[6px] outline-0 focus:outline-none placeholder-neutral-600/50 "
+                        rows="8"
+                        required
+                ></textarea>
+
+                <input value="Envoyez" type="submit" class="py-3 text-lg font-semibold cursor-pointer  w-full border-2 border-neutral-900 rounded-xl border-b-[6px] outline-0 focus:outline-none hover:bg-[#dacdf5]/50 duration-300 placeholder-neutral-600/50 bg-[#dacdf5] "/>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="w-full bg-[#f1f1f1] h-[230px] ">
+    <div class="grid gap-y-5 py-10">
+        <div class="flex items-center justify-center gap-x-5 py-5 ">
+            <a href="https://www.linkedin.com/in/dylan-mendomo-693708143/" target="_blank"
+               class="hover:bg-white hover:scale-110 rounded-2xl p-1 duration-300 "><img
+                    src="src/assets/linkedin-logo-fill.svg"></a>
+            <a href="https://github.com/dylanmdn" target="_blank"
+               class="hover:bg-white hover:scale-110 rounded-2xl p-1 duration-300"><img
+                    src="src/assets/github-logo-fill.svg"></a>
+
+        </div>
+        <p class="text-center text-sm text-neutral-500">Copyright © 2023 Mendomo Dylan. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
