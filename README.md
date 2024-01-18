@@ -1,4 +1,4 @@
-![Capture d’écran 2024-01-18 à 01 12 25](https://github.com/dylanmdo/Portfolio/assets/83838424/1d806784-817e-46de-b575-457bebe6acbc)Mon portfolio permet mettre en valeur mes compétences, projets et expériences dans le domaine du développement et de la conception d'application Web et Java. Que vous soyez un recruteur, un collègue développeur ou simplement curieux, j'espère que vous trouverez ici un aperçu complet de  de mes réalisations.
+Mon portfolio permet mettre en valeur mes compétences, projets et expériences dans le domaine du développement et de la conception d'application Web et Java. Que vous soyez un recruteur, un collègue développeur ou simplement curieux, j'espère que vous trouverez ici un aperçu complet de  de mes réalisations.
 
 https://mendomo.netlify.app/
 
@@ -10,9 +10,9 @@ Caractéristiques
 - Contact : N'hésitez pas à me contacter pour discuter de collaborations, opportunités ou simplement pour échanger des idées.
 
 Technologies utilisées
-HTML5
-CSS (Tailwind CSS)
-JavaScript
+- HTML5
+- CSS (Tailwind CSS)
+- JavaScript
 
 ![portfolio](https://github.com/dylanmdo/Portfolio/assets/83838424/9d204234-a162-498e-b3e2-93279a2ed1f2)
 
