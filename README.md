@@ -3,7 +3,7 @@ Mon portfolio permet mettre en valeur mes compétences, projets et expériences 
 https://mendomo.netlify.app/
 
 Caractéristiques
-- Design Épuré : Un design minimaliste pour mettre l'accent sur mes réalisations..
+- Design Épuré : Un design minimaliste pour mettre l'accent sur mes réalisations.
 - Projets : Découvrez mes projets récents, explorez les démos et parcourez le code source.
 - Compétences : Consultez la liste de mes compétences techniques.
 - Expérience : Un aperçu détaillé de mon parcours professionnel (CV) et de mes réalisations.
